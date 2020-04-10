@@ -866,6 +866,13 @@ hr {
 .cid-rRBIA44EwQ .mbr-maintext,
 .cid-rRBIA44EwQ .mbr-section-btn {
   color: #272727;
+  text-align: center;
+}
+.cid-rRBIA44EwQ .block-title,
+.cid-rRBIA44EwQ .mbr-section-title,
+.cid-rRBIA44EwQ .line,
+.cid-rRBIA44EwQ .mbr-section-btn {
+  text-align: center;
 }
 .cid-rRBILABAaP {
   padding-top: 90px;
@@ -970,7 +977,7 @@ hr {
   }
 }
 .cid-rRBIOaOVKu .box {
-  background-image: url("../../../assets/images/0ff292d8-a648-401c-8f46-500d92984bff-2000x1125.jpg");
+  background-image: url("../../../assets/images/0ff292d8-a648-401c-8f46-500d92984bff-2000x1125.jpeg");
   background-size: cover;
   background-position: center;
   height: 380px;
