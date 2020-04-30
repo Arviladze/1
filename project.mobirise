@@ -682,6 +682,9 @@
             },
             ".heading-title": {
               "text-align": "center"
+            },
+            ".card-title": {
+              "font-size": "24px"
             }
           },
           "_params": {
@@ -722,7 +725,7 @@
               "size": 48
             }
           },
-          "title1": "Гранты на заработную плату",
+          "title1": "Гранты на заработную плату<br><br><br>",
           "subtitle1": "Awesome",
           "text1": "Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.",
           "button1": "<a data-app-btn=\"true\" class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">Learn more</a>",
@@ -752,7 +755,7 @@
               "size": 48
             }
           },
-          "title3": "Отсрочка по страховым взносам\r<div>6 месяцев<br><br></div>",
+          "title3": "Отсрочка по страховым взносам\n<div>6 месяцев<br><br></div>",
           "subtitle3": "Awesome",
           "text3": "Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.",
           "button3": "<a data-app-btn=\"true\" class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">Learn more</a>",
@@ -791,6 +794,9 @@
             ".mbr-iconfont": {
               "color": "@primaryColor",
               "border-color": "@primaryColor"
+            },
+            ".card-title": {
+              "font-size": "24px"
             }
           },
           "_params": {
@@ -831,7 +837,7 @@
               "size": 48
             }
           },
-          "title1": "Беспроцентный кредит на зарплату сотрудникам\r<div>6 месяцев</div>",
+          "title1": "Беспроцентный кредит на зарплату сотрудникам\n<div>6 месяцев</div>",
           "subtitle1": "Awesome",
           "text1": "Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.",
           "button1": "<a data-app-btn=\"true\" class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">Learn more</a>",
@@ -861,7 +867,7 @@
               "size": 48
             }
           },
-          "title3": "Мораторий на взыскание долгов и штрафов<br><br>",
+          "title3": "Мораторий на взыскание долгов и штрафов<br><br><br>",
           "subtitle3": "Awesome",
           "text3": "Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.",
           "button3": "<a data-app-btn=\"true\" class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">Learn more</a>",
@@ -900,6 +906,9 @@
             ".mbr-iconfont": {
               "color": "@primaryColor",
               "border-color": "@primaryColor"
+            },
+            ".card-title": {
+              "font-size": "24px"
             }
           },
           "_params": {
@@ -970,7 +979,7 @@
               "size": 48
             }
           },
-          "title3": "Программа льготного кредитования<br><br><br>\n<div><br></div>",
+          "title3": "Программа льготного кредитования<br><br>\n<div><br></div>",
           "subtitle3": "Awesome",
           "text3": "Mobirise is an offline app for Window and Mac to easily create small/medium websites, landing pages, online resumes and portfolios, promo sites for apps, events, services and products.",
           "button3": "<a data-app-btn=\"true\" class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">Learn more</a>",
@@ -1055,7 +1064,7 @@
           "list4": "<li>Гранты на заработную плату\r</li><li>Отсрочка по налогам\r</li><li>Кредитные каникулы\r</li><li>Отсрочка по аренде\r</li><li>Запрет на проверки, взыскания и санкции\r</li><li>Снижение требований к обеспечению госконтрактов и сохранение объемов закупок\r</li><li>Субсидия регионам на оказание неотложных мер по поддержке малого и среднего бизнеса</li>",
           "list5": "<li>Block with media and \"typed\" text effect.</li><br><li>Enter in any string, and watch it type at the speed you have set</li><br><li>Lorem ipsum dolor sit amet, consectetur adipisic elit.</li>",
           "list6": "<li>Block with media and \"typed\" text effect.</li><br><li>Enter in any string, and watch it type at the speed you have set</li><br><li>Lorem ipsum dolor sit amet, consectetur adipisic elit.</li>",
-          "button1": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://t.me/joinchat/AAAAAFOot4OQ8JIU8DS9wQ\" data-toolbar=\"-mbrBtnMove\">Подробнее на нашем канале</a>",
+          "button1": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://t.me/joinchat/AAAAAFOot4OQ8JIU8DS9wQ\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-paper-plane mbr-iconfont mbr-iconfont-btn\"></span>Подробнее на нашем канале</a>",
           "button2": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://t.me/joinchat/AAAAAFOot4OQ8JIU8DS9wQ\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-paper-plane mbr-iconfont mbr-iconfont-btn\"></span>Подробнее на нашем канале</a>",
           "button3": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://t.me/joinchat/AAAAAFOot4OQ8JIU8DS9wQ\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-paper-plane mbr-iconfont mbr-iconfont-btn\"></span>Подробнее на нашем канале</a>",
           "button4": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://t.me/joinchat/AAAAAFOot4OQ8JIU8DS9wQ\" data-toolbar=\"-mbrBtnMove\"><span class=\"mbri-paper-plane mbr-iconfont mbr-iconfont-btn\"></span>Подробнее на нашем канале</a>",
@@ -1160,7 +1169,8 @@
               "line-height": "1.7"
             },
             ".mbr-section-title": {
-              "letter-spacing": "0.1em"
+              "letter-spacing": "0.1em",
+              "text-align": "center"
             },
             ".mbr-section-subtitle": {
               "letter-spacing": "0.03em"
@@ -1298,7 +1308,7 @@
             "overlayColor": "#000000",
             "overlayOpacity": 0.2
           },
-          "title": "Будем рады помочь,<br> задавайте вопросы.",
+          "title": "Задайте вопрос",
           "text": "",
           "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-primary\" href=\"https://mobirise.com\">Download for Windows</a>",
           "_tags": [

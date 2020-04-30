@@ -672,6 +672,9 @@ section.form .container {
 #features5-t .heading-title {
   text-align: center;
 }
+#features5-t .card-title {
+  font-size: 24px;
+}
 #features5-q .mbr-cards-col:hover .card-overlay {
   opacity: 1;
 }
@@ -686,6 +689,9 @@ section.form .container {
   color: #5aac98;
   border-color: #5aac98;
 }
+#features5-q .card-title {
+  font-size: 24px;
+}
 #features5-r .mbr-cards-col:hover .card-overlay {
   opacity: 1;
 }
@@ -699,6 +705,9 @@ section.form .container {
 #features5-r .mbr-iconfont {
   color: #5aac98;
   border-color: #5aac98;
+}
+#features5-r .card-title {
+  font-size: 24px;
 }
 #content3-o .mbr-section-title,
 #content3-o .mbr-section-subtitle {
@@ -734,6 +743,7 @@ section.form .container {
 }
 .cid-rXE7XsJWTa .mbr-section-title {
   letter-spacing: 0.1em;
+  text-align: center;
 }
 .cid-rXE7XsJWTa .mbr-section-subtitle {
   letter-spacing: 0.03em;
