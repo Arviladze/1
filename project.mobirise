@@ -116,7 +116,7 @@
               "color": "#ffffff"
             },
             "H1": {
-              "text-align": "center"
+              "text-align": "left"
             }
           },
           "_name": "extHeader1",
