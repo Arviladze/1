@@ -1,64 +1,59 @@
 {
   "settings": {
-    "name": "IT_Sancvet",
     "currentPage": "index.html",
     "theme": {
-      "name": "mobirise4",
-      "title": "Mobirise 4",
+      "name": "antivirusamp",
+      "title": "AntiVirusAMP",
       "styling": {
-        "primaryColor": "#149dcc",
-        "secondaryColor": "#ff3366",
-        "successColor": "#F7ED4A",
-        "infoColor": "#82786E",
-        "warningColor": "#879A9F",
-        "dangerColor": "#B1A374",
-        "mainFont": "Rubik",
-        "display1Font": "Rubik",
-        "display1Size": 4.25,
-        "display2Font": "Rubik",
-        "display2Size": 3,
-        "display5Font": "Rubik",
-        "display5Size": 1.5,
-        "display7Font": "Rubik",
-        "display7Size": 1,
-        "display4Font": "Rubik",
-        "display4Size": 1,
-        "isRoundedButtons": true,
-        "isAnimatedOnScroll": false,
-        "isScrollToTopButton": false
+        "primaryColor": "#003188",
+        "secondaryColor": "#fb5f3d",
+        "successColor": "#0dcd7b",
+        "infoColor": "#8282e7",
+        "warningColor": "#767676",
+        "dangerColor": "#e7f0ff",
+        "mainFont": "Roboto",
+        "display1Font": "Roboto",
+        "display1Size": 4.8,
+        "display2Font": "Noto Sans",
+        "display2Size": 3.2,
+        "display5Font": "Roboto",
+        "display5Size": 1.7,
+        "display7Font": "Roboto",
+        "display7Size": 1.1,
+        "display4Font": "Roboto",
+        "display4Size": 0.9,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#4ea2e3"
       },
+      "titlePreset": "AntiVirus Shop",
+      "nameSelectPreset": "shop",
       "additionalSetColors": []
     },
     "path": "@PROJECT_PATH@",
-    "versionFirst": "4.11.6",
+    "name": "Site-10-02_1015",
+    "versionFirst": "4.12.4",
     "siteFonts": [
       {
-        "css": "'Rubik', sans-serif",
-        "name": "Rubik",
-        "url": "https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i"
+        "css": "'Roboto', sans-serif",
+        "name": "Roboto",
+        "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      },
+      {
+        "css": "'Noto Sans', sans-serif",
+        "name": "Noto Sans",
+        "url": "https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i"
       }
     ],
-    "favicon": "@PROJECT_PATH@/assets/images/dollars-money-banknotes-100-white-background-582988-1280x853-128x85.png",
-    "noImageResize": false,
-    "cssOptimize": false,
-    "lazyLoad": false,
-    "lazyType": "nothing",
-    "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
-    "cookiesAlert": false,
-    "gdpr": false,
-    "pwa-switcher": false,
-    "uniqCompNum": 15,
-    "versionPublish": "4.11.6",
-    "screenshot": "screenshot.png"
+    "imageResize": true,
+    "uniqCompNum": 4,
+    "versionPublish": "4.12.4"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "IT_Sancvet",
+        "title": "Home",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -68,566 +63,234 @@
         {
           "alias": false,
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value",
-              "& when (@gradientBg)": {
-                "background": "linear-gradient(45deg, @bg-value, @color2)"
-              }
-            },
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            "& when (@reverseContent)": {
-              ".media-container-row": {
-                "flex-direction": "row-reverse",
-                "-webkit-flex-direction": "row-reverse"
-              }
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
             },
-            ".mbr-figure": {
-              "@media (min-width: 992px)": {
-                "padding-right": "4rem",
-                "& when (@reverseContent)": {
-                  "padding-right": "0",
-                  "padding-left": "4rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                "padding-bottom": "3rem"
-              }
-            },
-            ".mbr-text": {
-              "@media (max-width: 767px)": {
-                "text-align": "center"
-              }
-            },
-            "H1": {
-              "color": "#232323"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#767676"
+            ".content": {
+              "max-width": "450px"
             }
           },
-          "_name": "header3",
-          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    \n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"100\">\n        <input type=\"checkbox\" title=\"Медиа Слева/Справа\" name=\"reverseContent\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#232323\" condition=\"gradientBg && bg.type == 'color'\">\n        \n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/dollars-money-banknotes-100-white-background-582988-1280x853-1014x676.jpg\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\">Выведите свой ИТ-бизнес на международный уровень</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Красивые мобильные сайты\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">Продавайте по всему миру,&nbsp;привлекайте больше покупателей,&nbsp;принимайте платежи по всем каналам продаж.</p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "s9dtF6JA5O",
-          "_anchor": "header3-0",
+          "_name": "header02",
+          "_customHTML": "<section class=\"mbr-section headers2\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n       <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n              <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        \n        <div class=\"mbr-row\">\n   \n            \n            \n        <div class=\"mbr-col-lg-7 md-pb mbr-col-md-7 mbr-col-sm-12\">\n        <div class=\"content\">\n          <h1 class=\"mbr-section-title mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">Все нюансы работы самозанятых&nbsp;</h1>\n        <p class=\"mbr-fonts-style mbr-regualr mbr-text align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">\n            Узнайте всё о режиме самозанятых и возможности специальных льготных займов</p>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-danger\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                READ MORE</a> <a class=\"btn btn-md btn-danger\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                SHOP NOW</a></div>\n            \n   \n            </div>\n       \n       </div>     \n        \n                 <div class=\"mbr-col-lg-5 md-pb mbr-col-md-5 mbr-col-sm-12\">\n              <amp-img src=\"@PROJECT_PATH@/assets/images/26eaf74e63a7d29ea730201aaf304f61-890x825.jpg\" layout=\"responsive\" height=\"413\" width=\"445.53939393939396\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/26eaf74e63a7d29ea730201aaf304f61-890x825.jpg\" alt=\"Mobirise\" title>\n                        </amp-img>\n            \n             </div>\n            \n    </div>\n        </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "header02-0",
+          "_isUserblock": true,
+          "_sourceTheme": "antivirusamp",
+          "_cid": "rW8V4Dkvnq",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
         },
         {
-          "alias": "mobirise4-blocks/components",
+          "alias": "amp-blocks/components",
           "_isSecondary": true,
-          "typeCompatible": "!isAMP",
+          "typeCompatible": "isAMP",
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
+            "padding-top": "(@paddingTop * 10px)",
+            "padding-bottom": "(@paddingBottom * 10px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-text": {
-              "color": "#767676"
-            },
-            "h4": {
-              "text-align": "center"
-            },
-            "p": {
-              "text-align": "center"
-            },
-            ".card": {
-              ".card-img": {
-                "display": "flex",
-                "-webkit-justify-content": "center",
-                "justify-content": "center"
-              },
-              "&:hover": {
-                ".step": {
-                  "color": "#ffffff",
-                  "border": "0px solid transparent",
-                  "box-shadow": "0 10px 40px 0 rgba(0, 0, 0, 0.2)",
-                  "&:before": {
-                    "-webkit-transform": "scale(1)",
-                    "transform": "scale(1)"
-                  }
-                }
+              "background-image": "url(@bg-value)",
+              "> .mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
               }
             },
-            ".step": {
-              "-webkit-transform": "perspective(1px) translateZ(0)",
-              "transform": "perspective(1px) translateZ(0)",
-              "width": "100px",
-              "height": "100px",
-              "border": "2px solid #eee",
-              "display": "flex",
-              "-webkit-justify-content": "center",
-              "justify-content": "center",
-              "-webkit-align-items": "center",
-              "align-items": "center",
-              "border-radius": "50%",
-              "transition": "all .3s",
-              "&:before": {
-                "content": "\"\"",
-                "position": "absolute",
-                "z-index": "-1",
-                "top": "0",
-                "left": "0",
-                "right": "0",
-                "bottom": "0",
-                "-webkit-transform": "scale(0)",
-                "transform": "scale(0)",
-                "transition-duration": "0.3s",
-                "background": "linear-gradient(45deg, @counterColor1, @counterColor2)",
-                "border-radius": "50%"
+            "& when (@reverse)": {
+              ".text__block": {
+                "padding": "0 16px 30px 80px"
               }
             },
-            ".underline": {
-              "padding-top": ".5rem",
-              "padding-bottom": ".5rem",
-              ".line": {
-                "width": "5rem",
-                "height": "3px",
-                "background": "linear-gradient(90deg, @primaryColor, @secondaryColor)",
-                "display": "inline-block"
+            "& when not (@reverse)": {
+              ".text__block": {
+                "padding": "0 80px 30px 16px"
               }
             },
-            "@media (min-width: 768px)": {
-              ".mbr-section-title,.underline": {
-                "padding-left": "3rem",
-                "padding-right": "3rem"
+            "& when (@showSubtext)": {
+              ".subtext": {
+                "margin-bottom": "15px",
+                "background-color": "lighten(@accentColor, 32%)",
+                "line-height": "21px",
+                "padding": "8px 20px",
+                "display": "inline-block",
+                "color": "@accentColor"
               }
-            }
-          },
-          "_name": "extFeatures3",
-          "_customHTML": "<section class=\"extFeatures\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">       \n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" checked condition=\"showTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\">\n        <input type=\"color\" title=\"Step Color 1\" name=\"counterColor1\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Step Color 2\" name=\"counterColor2\" value=\"#767676\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=kI1YE_qenSU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n <!--    <div mbr-class=\"{'container':cardsAmount<5,'container-fluid':cardsAmount>4}\"> -->\n    <div class=\"container-fluid\">\n        <h2 class=\"align-center mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title,.underline\">Увеличьте свой доход за счёт:&nbsp;</h2>\n        <div class=\"underline align-center\" mbr-if=\"showUnderline&&showTitle\">\n            <div class=\"line\"></div>\n        </div>\n        <div class=\"row justify-content-center content-row\" mbr-class=\"{'pt-5':showTitle}\">\n            <div class=\"card p-3 col-md-6 col-lg-4 col-xl-2\">\n                <div class=\"card-img pb-5\">\n                    <div class=\"step\">\n                        <span mbr-text class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">1</span>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showTitle||showText\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Продажи в 200+ странах</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-md-6 col-lg-4 col-xl-2\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-img pb-5\">\n                    <div class=\"step\">\n                        <span mbr-text class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">2</span>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showTitle||showText\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Работа на площадках AMAZON, EBAY и др.</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-md-6 col-lg-4 col-xl-2\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-img pb-5\">\n                    <div class=\"step\">\n                        <span mbr-text class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">3</span>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showTitle||showText\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Использование PAYPAL, STRIPE, ADYEN и др.</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-md-6 col-lg-4 col-xl-2\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-img pb-5\">\n                    <div class=\"step\">\n                        <span mbr-text class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">4</span>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showTitle||showText\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Продажи как юридическим, так и физическим лицам</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-md-6 col-lg-4 col-xl-2\" mbr-if=\"cardsAmount > 4\">\n                <div class=\"card-img pb-5\">\n                    <div class=\"step\">\n                        <span mbr-text class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">5</span>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showTitle||showText\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Приём всех способов оплат</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                    </p>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-md-6 col-lg-4 col-xl-2\" mbr-if=\"cardsAmount > 5\">\n                <div class=\"card-img pb-5\">\n                    <div class=\"step\">\n                        <span mbr-text class=\"mbr-fonts-style\" mbr-theme-style=\"display-2\">6</span>\n                    </div>\n                </div>\n                <div class=\"card-box\" mbr-if=\"showTitle||showText\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Быстрый вывод прибыли</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                    </p>\n                </div>\n            </div>\n\n        </div>\n    </div>\n</section>",
-          "_cid": "s9duXuKMrv",
-          "_anchor": "extFeatures3-2",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
             },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
+            "& when (@showDivider) and (@showTitle)": {
+              ".divider": {
+                "width": "(@divider * 1px)",
+                "background-color": "@accentColor"
+              }
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "P": {
-              "color": "#767676"
-            }
-          },
-          "_name": "header16",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    ИНТРО В ПОЛНУЮ ШИРИНУ\n                </h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Красивые мобильные сайты\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Интро в полную ширину с регулируемой высотой, фоновым изображением и наложением цвета. Щелкните, чтобы изменить любой текст или его стиль.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"index.html#form1-c\" data-app-placeholder=\"Введите Текст\">ПОДРОБНЕЕ</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "s9dvEHIZd5",
-          "_anchor": "header16-3",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#767676",
-              "text-align": "center",
-              "font-weight": "300"
-            },
-            ".timeline-text-content": {
-              "padding": "2rem 2.5rem",
-              "background": "@timelineColor",
-              "margin-right": "2rem",
-              "p": {
-                "margin-bottom": "0"
-              },
-              "transition": "all .4s"
-            },
-            ".timeline-element": {
-              "margin-bottom": "50px",
+            ".inner-item": {
+              "margin-bottom": "30px",
+              "box-shadow": "0px 0px 35px 0px rgba(0, 0, 0, 0.07)",
+              "overflow": "hidden",
               "position": "relative",
-              "word-wrap": "break-word",
-              "word-break": "break-word",
-              "display": "-webkit-flex",
-              "flex-direction": "row",
-              "-webkit-flex-direction": "row",
+              "padding": "40px 50px 40px 30px",
+              "transition": "all 0.3s ease",
+              "background-color": "@bgCard",
               "&:hover": {
-                ".timeline-text-content": {
-                  "box-shadow": "0 7px 20px 0px rgba(0, 0, 0, 0.08)",
-                  "transition": "all .4s"
+                "transform": "translateY(-15px)",
+                ".card__title": {
+                  "color": "#fff"
+                },
+                ".card__text": {
+                  "color": "#fff",
+                  "opacity": "0.75"
+                },
+                ".mbr-overlay": {
+                  "top": "0%"
+                },
+                "amp-img": {
+                  "top": "0%",
+                  "opacity": "1",
+                  "filter": "brightness(50%)"
                 }
+              },
+              ".mbr-overlay": {
+                "transition": "all 0.3s ease-out",
+                "background-color": "#000",
+                "top": "100%"
               }
             },
-            ".reverse": {
-              "flex-direction": "row-reverse",
-              "-webkit-flex-direction": "row-reverse",
-              ".timeline-text-content": {
-                "margin-left": "2rem",
-                "margin-right": "0"
-              }
-            },
-            ".iconsBackground": {
+            "amp-img": {
+              "border-radius": "10px",
               "position": "absolute",
-              "left": "50%",
-              "width": "60px",
-              "height": "60px",
-              "line-height": "30px",
-              "text-align": "center",
-              "border-radius": "50%",
-              "display": "inline-block",
-              "background-color": "@timelineColor",
-              "top": "20px",
-              "margin-left": "-30px"
-            },
-            ".mbr-iconfont": {
-              "position": "absolute",
-              "text-align": "center",
-              "font-size": "35px",
-              "display": "inline-block",
-              "z-index": "3",
-              "top": "13px",
-              "left": "13px"
-            },
-            ".separline:before": {
-              "top": "20px",
+              "top": "100%",
               "bottom": "0",
-              "position": "absolute",
-              "content": "\"\"",
-              "width": "2px",
-              "background-color": "@timelineColor",
-              "left": "calc(50% ~\"-\" 1px)",
-              "height": "calc(100% ~\"+\" 4rem)"
+              "right": "0",
+              "left": "0",
+              "opacity": "0",
+              "transition": "opacity 0.17s ease-out 0.18s"
+            },
+            ".text__box": {
+              "z-index": "2",
+              "width": "100%"
+            },
+            ".card__title": {
+              "margin-top": "23px",
+              "transition": "all 0.3s ease"
+            },
+            ".card__text": {
+              "transition": "all 0.3s ease"
+            },
+            "& when (@showIcon)": {
+              ".service__icon": {
+                "width": "((@iconSize * 1px) + 30px)",
+                "height": "((@iconSize * 1px) + 30px)",
+                "padding": "15px",
+                ".mbr-iconfont": {
+                  "font-size": "(@iconSize * 1px)",
+                  "width": "(@iconSize * 1px)"
+                }
+              },
+              ".item1": {
+                "background-color": "@item1",
+                "color": "contrast(@item1)"
+              },
+              ".item2": {
+                "background-color": "@item2",
+                "color": "contrast(@item2)"
+              },
+              ".item3 when (@cardsAmount > \"2\")": {
+                "background-color": "@item3",
+                "color": "contrast(@item3)"
+              },
+              ".item4 when (@cardsAmount > \"3\")": {
+                "background-color": "@item4",
+                "color": "contrast(@item4)"
+              }
+            },
+            "@media (min-width: 991px)": {
+              ".push": {
+                "margin-top": "50px"
+              }
             },
             "@media (max-width: 768px)": {
-              ".iconsBackground": {
-                "left": "1.5rem"
-              },
-              ".separline:before": {
-                "left": "calc(1.5rem ~\"-\" 1px)"
-              },
-              ".timeline-text-content": {
-                "margin-left": "3rem !important",
-                "margin-right": "0 !important"
-              },
-              ".reverse": {
-                ".timeline-text-content": {
-                  "margin-right": "0 !important"
-                }
+              ".text__block": {
+                "padding": "0 16px 30px"
               }
             },
-            ".reverseTimeline": {
-              "display": "flex",
-              "flex-direction": "column-reverse"
+            ".subtext": {
+              "color": "#8282e7"
             }
           },
-          "_name": "timeline2",
-          "_customHTML": "<section class=\"timeline2\" group=\"Timelines & Steps\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        \n        <input type=\"color\" title=\"Цвет блоков\" name=\"timelineColor\" value=\"#efefef\">\n        <select title=\"Число блоков\" name=\"timelinesAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n            <option value=\"11\">11</option>\n            <option value=\"12\">12</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reverse Timeline\" name=\"reverseTimeline\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#cccccc\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <h2 class=\"mbr-section-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Как это работает?&nbsp;</h2>\n        <h3 class=\"mbr-section-subtitle pb-5 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit\n        </h3>\n\n        <div class=\"container timelines-container\" mbri-timelines mbr-class=\"{'reverseTimeline': reverseTimeline}\">\n            <!--1-->\n            <div class=\"row timeline-element reverse\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 1}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-edit\"></span>\n                </span>          \n                <div class=\"col-xs-12 col-md-6 align-left\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">Открытие зарубежной компании и банковского счёта&nbsp;</h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\"></p>\n                     </div>\n                </div>\n            </div>\n            <!--2-->\n            <div class=\"row timeline-element \" mbr-if=\"timelinesAmount>1\" mbr-class=\"{'separline':timelinesAmount>2 &amp;&amp; !reverseTimeline || !reverseTimeline &amp;&amp; timelinesAmount > 2 || reverseTimeline &amp;&amp; timelinesAmount > 1}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left \">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">Подключение к платёжным системам/шлюзам. Работаем только с высоконадёжными сервисами</h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">Возможно рассмотрение предложенного клиентом сервиса</p>\n                    </div>\n                </div>\n            </div>\n            <!--3-->\n            <div class=\"row timeline-element reverse\" mbr-if=\"timelinesAmount>2\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 3 || reverseTimeline &amp;&amp; timelinesAmount > 2}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-pages\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">Настройка документооборота</h4>      \n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            (выставление счетов, обмен валюты, сбор документов)\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--4-->\n            <div class=\"row timeline-element \" mbr-if=\"timelinesAmount>3\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 4 || reverseTimeline &amp;&amp; timelinesAmount > 3}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-shopping-basket mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left \">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Современный дизайн\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--5-->\n            <div class=\"row timeline-element reverse\" mbr-if=\"timelinesAmount>4\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 5 || reverseTimeline &amp;&amp; timelinesAmount > 4}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-new-file mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Потрясающие отчеты\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--6-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount>5\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 6 || reverseTimeline &amp;&amp; timelinesAmount > 5}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-pages mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left \">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Вариативность страниц\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--7-->\n            <div class=\"row timeline-element reverse\" mbr-if=\"timelinesAmount>6\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 7 || reverseTimeline &amp;&amp; timelinesAmount > 6}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Адаптивный дизайн\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--8-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount>7\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 8 || reverseTimeline &amp;&amp; timelinesAmount > 7}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-watch mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left \">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Умные часы\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--9-->\n            <div class=\"row timeline-element reverse\" mbr-if=\"timelinesAmount>8\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 9 || reverseTimeline &amp;&amp; timelinesAmount > 8}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-shopping-basket mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Современный дизайн\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--10-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount>9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-new-file mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left \">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Потрясающие отчеты\n                        </h4> \n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--11-->\n            <div class=\"row timeline-element reverse\" mbr-if=\"timelinesAmount>10\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 11 || reverseTimeline &amp;&amp; timelinesAmount > 10}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-shopping-basket mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Современный дизайн\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <!--12-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount>11\" mbr-class=\"{'separline': reverseTimeline &amp;&amp; timelinesAmount > 11}\">\n                <span class=\"iconsBackground\">\n                    <span mbr-icon class=\"mbri-new-file mbr-iconfont\"></span>\n                </span>\n                <div class=\"col-xs-12 col-md-6 align-left \">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            Потрясающие отчеты\n                        </h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-timeline-text\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat libero, bibendum in libero tempor, luctus volutpat ligula. Integer fringilla porttitor pretium. Nam erat felis, iaculis id justo ut, ullamcorper feugiat elit. Proin vel lectus auctor, porttitor ligula vitae, convallis leo. In eget massa elit.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s9dw8bimbE",
-          "_anchor": "timeline2-5",
+          "_name": "ampFeatures40",
+          "_customHTML": "<section class=\"ampFeatures40\" group=\"Features\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <!--  -->\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverse\">\n        <header>Text</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtext\" name=\"showSubtext\" checked>\n         <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\" checked>\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"color\" title=\"Accent Color\" name=\"accentColor\" value=\"#8282e7\" condition=\"(showDivider && showTitle) || showSubtext\">\n        <input type=\"checkbox\" title=\"Show Divider\" name=\"showDivider\" condition=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Divider Width\" name=\"divider\" min=\"5\" max=\"250\" step=\"5\" value=\"5\" condition=\"showDivider && showTitle\">\n        <header>Cards</header>\n        <select title=\"Cards Amount\" name=\"cardsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Card Text\" name=\"showCardText\" checked>\n        <select name=\"alignCard\" title=\"Align Card Text\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"color\" title=\"Background Card\" value=\"#ffffff\" name=\"bgCard\">\n        <header>Icon</header>\n        <input type=\"checkbox\" title=\"Show Icon\" name=\"showIcon\" checked>\n        <input type=\"range\" title=\"Icon Size\" name=\"iconSize\" min=\"16\" max=\"44\" step=\"2\" value=\"30\" condition=\"showIcon\">\n        <input type=\"color\" title=\"Color 1\" name=\"item1\" value=\"#41a9e0\" condition=\"showIcon\">\n        <input type=\"color\" title=\"Color 2\" name=\"item2\" value=\"#6e8fc7\" condition=\"showIcon\">\n        <input type=\"color\" title=\"Color 3\" name=\"item3\" value=\"#e66c67\" condition=\"showIcon &amp;&amp; cardsAmount >=3\">\n        <input type=\"color\" title=\"Color 4\" name=\"item4\" value=\"#34b794\" condition=\"showIcon &amp;&amp; cardsAmount > 3\">\n        <!--  -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" selected>\n        </fieldset>\n        <!--  -->\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n</mbr-parameters>\n    \n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n<div class=\"container\">\n    <div class=\"mbr-row\" mbr-class=\"{'mbr-row-reverse' : reverse}\">\n    <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-5 mbr-flex text__block align-left\" mbr-class=\"{'align-center' : alignContent == 2, 'align-right' : alignContent == 3}\">\n        <div class=\"title__block mbr-m-auto\">\n            <p class=\"subtext rounded__10 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtext\" data-app-selector=\".subtext\">incredible</p>\n            <h3 class=\"mbr-section-title mbr-bold mbr-fonts-style mbr-black\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .divider\">Скачать все необходимые материалы для самозанятого</h3>\n            <span class=\"divider\" mbr-if=\"showDivider\"></span>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, doloremque!</h4>\n            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maiores impedit quo earum quidem repellat.</p>\n            <div class=\"mbr-section-btn mbr-pt-4\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-info\" href=\"#\" data-app-placeholder=\"Type Text\">\n            <span class=\"mbrib-right mbr-iconfont mbr-iconfont-btn\"></span>\n            <span class=\"btn__hover\">Read More</span></a></div>\n        </div>\n    </div>\n    \n    <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-7\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-6\">\n                <div class=\"inner-item rounded__10 mbr-flex\" mbr-class=\"{'align-center' : alignCard == 2, 'align-right' : alignCard == 3}\">\n                     <div class=\"mbr-overlay rounded__10\"></div>\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/22.jpg\" alt=\"image\" height=\"297\" width=\"297\" layout=\"responsive\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img src=\"@PROJECT_PATH@/assets/images/22.jpg\" class=\"mbr-temp\">\n                    </amp-img>\n                    <div class=\"text__box mbr-flex mbr-column\">\n                        <div class=\"service__icon item1 rounded__10 iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span class=\"mbr-iconfont mbr-iconfont-btn align-center mbri-globe-2\" mbr-icon></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"mbr-fonts-style card__title mbr-semibold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".card__title\">Налоги самозанятых</h3>\n                            <p class=\"mbr-fonts-style mbr-regular card__text mbr-pt-1\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".card__text\">Всё о налоговыо системе для самозанятыъ</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"inner-item rounded__10 mbr-flex\" mbr-class=\"{'align-center' : alignCard == 2, 'align-right' : alignCard == 3}\" mbr-if=\"cardsAmount>2\">\n                     <div class=\"mbr-overlay rounded__10\"></div>\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/20.jpg\" alt=\"image\" height=\"297\" width=\"445.5\" layout=\"responsive\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img src=\"@PROJECT_PATH@/assets/images/20.jpg\" class=\"mbr-temp\">\n                    </amp-img>\n                    <div class=\"text__box mbr-flex mbr-column\">\n                        <div class=\"service__icon item3 rounded__10 iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span class=\"mbr-iconfont mbr-iconfont-btn align-center mbri-upload\" mbr-icon></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"mbr-fonts-style card__title mbr-semibold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".card__title\">Инструкции по регистрации</h3>\n                            <p class=\"mbr-fonts-style mbr-regular card__text mbr-pt-1\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".card__text\">Методичка с конкетными шагами</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-6\">\n                <div class=\"inner-item rounded__10 mbr-flex push\" mbr-class=\"{'align-center' : alignCard == 2, 'align-right' : alignCard == 3}\">\n                     <div class=\"mbr-overlay rounded__10\"></div>\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/24.jpg\" alt=\"image\" height=\"297\" width=\"445.71305595408893\" layout=\"responsive\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img src=\"@PROJECT_PATH@/assets/images/24.jpg\" class=\"mbr-temp\">\n                    </amp-img>\n                    <div class=\"text__box mbr-flex mbr-column\">\n                        <div class=\"service__icon item2 rounded__10 iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span class=\"mbr-iconfont mbr-iconfont-btn align-center mbri-download\" mbr-icon></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"mbr-fonts-style card__title mbr-semibold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".card__title\">Шаблоны документов</h3>\n                            <p class=\"mbr-fonts-style mbr-regular card__text mbr-pt-1\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".card__text\">Шаблоны всех необходимых докуметов для самозанятого</p>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"inner-item rounded__10 mbr-flex\" mbr-class=\"{'align-center' : alignCard == 2, 'align-right' : alignCard == 3}\" mbr-if=\"cardsAmount>3\">\n                     <div class=\"mbr-overlay rounded__10\"></div>\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/25.jpg\" alt=\"image\" height=\"297\" width=\"297\" layout=\"responsive\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img src=\"@PROJECT_PATH@/assets/images/25.jpg\" class=\"mbr-temp\">\n                    </amp-img>\n                    \n                    <div class=\"text__box mbr-flex mbr-column\">\n                        <div class=\"service__icon item4 rounded__10 iconfont-wrapper\" mbr-if=\"showIcon\">\n                            <span class=\"mbr-iconfont mbr-iconfont-btn align-center mbri-protect\" mbr-icon></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"mbr-fonts-style card__title mbr-semibold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".card__title\">Ответы на вопросы</h3>\n                            <p class=\"mbr-fonts-style mbr-regular card__text mbr-pt-1\" mbr-if=\"showCardText\" mbr-theme-style=\"display-4\" data-app-selector=\".card__text\">Ответы на часто задаваемые вопросы о самозанятых</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>\n</section>",
+          "_cid": "scf5yDJOI0",
+          "_anchor": "ampFeatures40-2",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
         },
         {
-          "alias": false,
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".line": {
-              "background-color": "@lineColor",
-              "color": "@lineColor",
-              "align": "center",
-              "height": "2px",
-              "margin": "0 auto"
-            },
-            ".section-text": {
-              "padding": "2rem 0"
-            },
-            ".inner-container": {
-              "margin": "0 auto"
-            },
-            "@media (max-width: 768px)": {
-              ".inner-container": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "content9",
-          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Ширина текста\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Ширина линии\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Цвет линии\" name=\"lineColor\" value=\"#767676\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text>Стоимость услуг&nbsp;</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
-          "_cid": "s9dxz0vB59",
-          "_anchor": "content9-7",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
+            "padding-top": "(@paddingTop * 10px)",
+            "padding-bottom": "(@paddingBottom * 10px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "h4": {
-              "font-weight": "500",
-              "color": "#ffffff"
-            },
-            "p": {
-              "color": "#ffffff"
-            },
-            ".card": {
-              "margin-bottom": "2rem"
-            },
-            ".card-img": {
-              "border-radius": "0",
-              "padding": "2rem 2rem 0 2rem",
-              "& when (@cardBg)": {
-                "background-color": "@cardColor"
-              },
-              "span": {
-                "font-size": "100px",
-                "color": "#ffffff"
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
               }
             },
-            ".card-box": {
-              "padding-bottom": "2rem",
-              ".card-title": {
-                "margin": "0",
-                "padding": "2rem 2rem 0 2rem"
-              },
-              ".mbr-text": {
-                "margin-bottom": "0",
-                "padding": "2rem 2rem 0 2rem"
-              },
-              ".mbr-section-btn": {
-                "padding-top": "1rem",
-                "a": {
-                  "margin-top": "1rem",
-                  "margin-bottom": "0"
-                }
-              },
-              "& when (@cardBg)": {
-                "background-color": "@cardColor",
-                "& when (@translucency)": {
-                  "background": "linear-gradient(@cardColor, transparent)"
-                }
+            ".mbr-row": {
+              "margin": "0"
+            },
+            ".service__icon": {
+              ".mbr-iconfont": {
+                "font-size": "(@iconSize * 1px)",
+                "color": "@iconColor",
+                "width": "(@iconSize * 1px)",
+                "margin-right": "27px"
               }
-            }
-          },
-          "_name": "features8",
-          "_customHTML": "<section class=\"features8\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Карты - Фон\" name=\"cardBg\" checked>\n        <input type=\"color\" title=\"Карты - Цвет\" name=\"cardColor\" value=\"#465052\" condition=\"cardBg\">\n        <input type=\"checkbox\" title=\"Прозрачность\" name=\"translucency\" checked condition=\"cardBg\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/5c3bb7ffe14d893-2000x1250.jpg\" parallax selected>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#efefef\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n\n            <div class=\"card  col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-setting\"></span>\n                </div>\n                <div class=\"card-box align-center\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Готовая бизнес-структура</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">«под ключ» – 11 000 EUR, <br>срок запуска – 1 месяц<br><br>\n                    </p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"index.html#form1-c\" class=\"btn btn-white-outline\" data-app-placeholder=\"Введите Текст\">\n                            Записаться на консультацию\n                        </a></div>\n                </div>\n            </div>\n\n            <div class=\"card  col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img\">\n                    <span mbr-icon class=\"mbr-iconfont mbri-growing-chart\"></span>\n                </div>\n                <div class=\"card-box align-center\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">Готовое решение</h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">Работа с уже готовой <br>структурой за комиссионное <br>вознаграждение 15%&nbsp;<br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"index.html#form1-c\" class=\"btn btn-white-outline\" data-app-placeholder=\"Введите Текст\">\n                            Записаться на консультацию\n                        </a></div>\n                </div>\n            </div>\n\n            <div class=\"card  col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img\">\n                    <span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n                </div>\n                <div class=\"card-box align-center\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n                        Уникальные стили\n                    </h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                       Mobirise предлагает много блоков сайта в нескольких темах, и хотя эти блоки сделаны шаблонами, они гибко настраиваются.\n                    </p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"https://mobirise.co\" class=\"btn btn-white-outline\" data-app-placeholder=\"Введите Текст\">\n                            Еще\n                        </a></div>\n                </div>\n            </div>\n\n            <div class=\"card  col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-img\">\n                    <span mbr-icon class=\"mbri-bootstrap mbr-iconfont\"></span>\n                </div>\n                <div class=\"card-box align-center\">\n                    <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-img\">\n                        Без кодирования\n                    </h4>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                       Mobirise - простой конструктор сайтов. Поместите элементы сайта на свою страницу, добавьте контент и стиль на свой вкус.\n                    </p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a href=\"https://mobirise.co\" class=\"btn btn-secondary\">\n                            Еще\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s9dM5uyAk9",
-          "_anchor": "features8-e",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "P": {
-              "color": "#767676"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#232323"
-            }
-          },
-          "_name": "header16",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    ИНТРО В ПОЛНУЮ ШИРИНУ\n                </h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Красивые мобильные сайты\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Первый шаг абсолютно бесплатный и ни к чему не обязывает. Уделите всего 10 секунд, чтобы оставить заявку на консультацию и получить ответы на все интересующие вопросы\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"index.html#form1-c\" data-app-placeholder=\"Введите Текст\">Записаться на консультацию</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
-          "_cid": "s9dymsEDKK",
-          "_anchor": "header16-8",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "position": "relative",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "p": {
-              "color": "#767676"
-            },
-            ".card": {
-              "border-radius": "0px",
-              "margin-bottom": "-1px",
-              ".card-header": {
-                "border-radius": "0px",
-                "border": "0px",
-                "padding": "0",
-                "a.panel-title": {
-                  "margin-bottom": "0",
-                  "margin-top": "-1px",
-                  "font-weight": "500",
-                  "font-style": "normal",
-                  "display": "block",
-                  "text-decoration": "none !important",
-                  "line-height": "normal",
-                  "&:focus": {
-                    "text-decoration": "none !important"
-                  },
-                  "h4": {
-                    "border": "1px solid #dfdfdf",
-                    "padding": "1.3rem 2rem",
-                    "margin-bottom": "0",
-                    ".sign": {
-                      "padding-right": "1rem"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "_name": "toggle1",
-          "_customHTML": "<section class=\"toggle1\" group=\"Accordion & Toggles & Tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-switch-arrow\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <select title=\"Количество\" name=\"bootstrapAccordion\">\n             <option value=\"1\">1</option>\n             <option value=\"2\">2</option>\n             <option value=\"3\">3</option>\n             <option value=\"4\">4</option>\n             <option value=\"5\">5</option>\n             <option value=\"6\" selected>6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n        <div class=\"container\">\n            <div class=\"media-container-row\">\n                <div class=\"col-12 col-md-8\">\n                    <div class=\"section-head text-center space30\">\n                       <h2 class=\"mbr-section-title pb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">FAQ\n                        </h2>\n                    </div>\n                    <div class=\"clearfix\"></div>\n                    <div id=\"bootstrap-toggle\" class=\"toggle-panel accordionStyles tab-content\">\n                        <div class=\"card\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>&nbsp;Почему мне не использовать Российское юр.лицо для подключения к платёжным сервисам?&nbsp;</h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">-\tМногие сервисы не работают в российскими юридическими лицами, либо предоставляют услуги за более высокую комиссию. Также при использования зарубежной компании отсутствует валютный контроль, не требуется регистрация всех сделок в банке и в целом  документооборот значительно меньше.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 1\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>&nbsp;Какие затраты еще ожидать после запуска в работу зарубежной компании?</h4>\n                                </a>\n\n                            </div>\n                            <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">-\tКомиссия платёжных сервисов (в среднем 3% с получаемых платежей); \n<br>-\tместные налоги в стране ПОКУПАТЕЛЯ программного обеспечения/услуги (если требуется согласно местному законодательству)\n<br>-\tНАЛОГИ на Вашей компании – в среднем 3-5% от оборота в зависимости от юрисдикции и объёмов продаж;\n<br>-\tПоддержание Вашей компании (бухгалтерия, адрес и т.п.) – в среднем 5000 евро в год.&nbsp;<br></p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 2\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>&nbsp;Смогу ли я принимать платежи из соцсетей различных стран?</h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">-\tДа, оплаты через соцсети интегрированы в платёжный сервис, также как и оплаты картами и электронными кошельками</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 3\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>&nbsp;В каких валютах я смогу получать платежи?</h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">-\tПолучать платежи в платёжной системе вы сможете в более чем 30 валютах, впоследствии обменивая их на удобную вам валюту по форекс курсу. Также и выставлять счета вы сможете в местной валюте покупателя – юридического лица.</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 4\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>&nbsp;Как быстро проходят оплаты?</h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">-\tВ зависимости от способа оплаты приём платежа осуществляется в течении 1-2 дней</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"card\" mbr-if=\"bootstrapAccordion > 5\">\n                            <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                                <a role=\"button\" class=\"collapsed panel-title text-black\" data-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                        <span class=\"sign mbr-iconfont mbri-arrow-down inactive\"></span>&nbsp;Какие виды платежей можно принимать?</h4>\n                                </a>\n                            </div>\n                            <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n                                <div class=\"panel-body p-4\">\n                                    <p class=\"mbr-fonts-style panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">-\tКредитные карты физических и юридических лиц\n<br>-\tМобильные платежи\n<br>-\tОплаты с электронных кошельков  \n<br>-\tБанковские переводы\n<br>-\tНаличные \n<br>-\tПредоплатные ваучеры&nbsp;<br></p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n</section>",
-          "_cid": "s9dBNjbmND",
-          "_anchor": "toggle1-a",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
             },
             ".title": {
-              "margin-bottom": "2rem"
+              "margin-bottom": "8px"
             },
-            ".mbr-section-subtitle": {
-              "color": "#767676"
+            ".mbr-section-btn": {
+              "align-items": "center"
             },
-            "a:not([href]):not([tabindex])": {
-              "color": "#fff",
-              "border-radius": "3px"
-            },
-            "a.btn-white:not([href]):not([tabindex])": {
-              "color": "#333"
-            },
-            "textarea.form-control": {
-              "min-height": "188px"
-            }
-          },
-          "_name": "form1",
-          "_customHTML": "<section class=\"mbr-section form1\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#c1c1c1\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-12 col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    КОНТАКТНАЯ ФОРМА\n                </h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">\n                    Легко добавить форму подписки и контакты без использования вашего хостинга.\n                </h3>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div mbr-form class=\"media-container-column col-lg-8\">\n                <!---Formbuilder Form--->\n                <form action=\"news@arktika24.ru\" name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Спасибо за заполнение анкеты!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-md-4  form-group\" data-for=\"name\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"name\" class=\"form-control-label mbr-fonts-style\">Имя</label>\n                            <input type=\"text\" name=\"name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-4  form-group\" data-for=\"email\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"email\" class=\"form-control-label mbr-fonts-style\">Email</label>\n                            <input type=\"email\" name=\"email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"phone\" class=\"col-md-4  form-group\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"phone\" class=\"form-control-label mbr-fonts-style\">Телефон</label>\n                            <input type=\"tel\" name=\"phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"message\" class=\"col-md-12 form-group\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"message\" class=\"form-control-label mbr-fonts-style\">Сайт вашего продукта и пояснение</label>\n                            <textarea name=\"message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n                        </div>\n                        <div class=\"col-md-12 input-group-btn align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary btn-form\" data-app-placeholder=\"Введите Текст\">ОТПРАВИТЬ</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s9dDBxoWK1",
-          "_anchor": "form1-c",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#767676"
-            },
-            "ul.list-inline": {
-              "margin": "0",
-              "-webkit-align-self": "center",
-              "align-self": "center",
-              "li": {
-                "margin": "0",
-                "padding": ".5rem"
+            "@media (max-width: 768px)": {
+              ".btn": {
+                "margin-top": "30px"
               },
-              "img": {
-                "max-width": "6rem",
-                "padding-bottom": ".5rem",
-                "& when (@grayFilter)": {
-                  "-webkit-filter": "grayscale(100%)",
-                  "-moz-filter": "grayscale(100%)",
-                  "-ms-filter": "grayscale(100%)",
-                  "-o-filter": "grayscale(100%)",
-                  "filter": "gray"
-                },
-                "&:hover": {
-                  "-webkit-filter": "none",
-                  "-moz-filter": "none",
-                  "-ms-filter": "none",
-                  "-o-filter": "none",
-                  "filter": "none"
+              ".mbr-section-btn": {
+                "justify-content": "center",
+                "margin": "0"
+              },
+              ".service__icon": {
+                ".mbr-iconfont": {
+                  "margin-right": "0"
                 }
               }
-            },
-            "@media (max-width: 767px)": {
-              ".list-inline-item img": {
-                "max-width": "5rem"
-              }
             }
           },
-          "_name": "extInfo1",
-          "_customHTML": "<section class=\"extInfo\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Gray Filter\" name=\"grayFilter\">\n        <input type=\"checkbox\" title=\"Visa\" name=\"showVisa\">\n        <input type=\"checkbox\" title=\"Master Card\" name=\"showMasterCard\">\n        <input type=\"checkbox\" title=\"American Express\" name=\"showAmericanExpress\" checked>\n        <input type=\"checkbox\" title=\"Pay Pal\" name=\"showPayPal\" checked>\n        <input type=\"checkbox\" title=\"Diners Club\" name=\"showDinersClub\" checked>\n        <input type=\"checkbox\" title=\"Discover\" name=\"showDiscover\" checked>\n        <input type=\"checkbox\" title=\"Bitcoin\" name=\"showBitcoin\" checked>\n        <input type=\"checkbox\" title=\"Western Union\" name=\"showWesternUnion\" checked>\n        <input type=\"checkbox\" title=\"JCB\" name=\"showJcb\" checked>\n        <input type=\"checkbox\" title=\"Stripe\" name=\"showStripe\">\n        <input type=\"checkbox\" title=\"Amazon\" name=\"showAmazon\" checked>\n        <input type=\"checkbox\" title=\"Ebay\" name=\"showEbay\" checked>\n        <input type=\"checkbox\" title=\"Union Pay\" name=\"showUnionPay\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-12\" mbr-if=\"showTitle || showSubtitle\">\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style pb-2 mbr-light align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-class=\"{'pb-4':!showTitle}\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n                <h2 class=\"align-center mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                   Supported payment systems in our store\n                </h2>\n            </div>\n\n            <div class=\"col-12 col-md-12\" mbr-class=\"{'pt-4':showTitle}\">\n                <div class=\"row justify-content-center\">\n                    <ul class=\"list-inline align-center\">\n                        <li class=\"list-inline-item\" mbr-if=\"showVisa\">\n                            <img src=\"../_images/payments/visa.png\" alt=\"Visa\">\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showMasterCard\">\n                            <img src=\"../_images/payments/master-card.png\" alt=\"Master Card\">\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showAmericanExpress\">\n                            <img src=\"@PROJECT_PATH@/assets/images/kisspng-stripe-payment-gateway-payment-processor-authorize-colored-stripes-5ae79e781db0f5.9682616415251288241216-192x111.jpg\" alt=\"American Express\" title>\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showPayPal\">\n                            <img src=\"../_images/payments/paypal.png\" alt=\"Pay Pal\">\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showDinersClub\">\n                            <img src=\"@PROJECT_PATH@/assets/images/braintree-192x68.jpg\" alt=\"Diners Club\" title>\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showDiscover\">\n                            <img src=\"@PROJECT_PATH@/assets/images/paddle-logo-2-168x63.png\" alt=\"Discover\" title>\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showBitcoin\">\n                            <img src=\"@PROJECT_PATH@/assets/images/3210229-192x100.png\" alt=\"Bitcoin\" title>\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showWesternUnion\">\n                            <img src=\"@PROJECT_PATH@/assets/images/367cb0a280-192x51.png\" alt=\"Western Union\" title>\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showJcb\">\n                            <img src=\"@PROJECT_PATH@/assets/images/2checkout-logo-blue-green-192x80.png\" alt=\"JCB\" title>\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showStripe\">\n                            <img src=\"../_images/payments/stripe.png\" alt=\"Stripe\">\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showAmazon\">\n                            <img src=\"../_images/payments/amazon.png\" alt=\"Amazon\">\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showEbay\">\n                            <img src=\"../_images/payments/ebay.png\" alt=\"Ebay\">\n                        </li>\n                        <li class=\"list-inline-item\" mbr-if=\"showUnionPay\">\n                            <img src=\"../_images/payments/union-pay.png\" alt=\"Union Pay\">\n                        </li>\n                    \n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s9dz1NQiW9",
-          "_anchor": "extInfo1-9",
+          "_name": "ampContent21",
+          "_customHTML": "﻿<section class=\"ampContent21\" group=\"Content\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <!--  -->\n        <header>Text</header>\n         <input type=\"range\" title=\"Icon Size\" name=\"symbolSize\" min=\"20\" max=\"52\" step=\"4\" value=\"40\" condition=\"text1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"title\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"subtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Icon\" name=\"showIcon\" checked=\"\">\n        <input type=\"color\" title=\"Icon Color\" value=\"#3b7eff\" name=\"iconColor\" condition=\"showIcon\" selected=\"\">\n        <input type=\"range\" title=\"Icon Size\" name=\"iconSize\" min=\"20\" max=\"50\" step=\"2\" value=\"40\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#eef3f9\" selected=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3b7eff\" condition=\"overlay &amp;&amp; bg.type == 'image'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay &amp;&amp; bg.type == 'image'\">\n</mbr-parameters>\n    \n   <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n<div class=\"container\"> \n    <div class=\"mbr-row \">\n        <div class=\"service__icon mbr-col-sm-12 align-center\" mbr-if=\"showIcon\">\n      <span class=\"mbr-iconfont mbr-iconfont-btn mbrib-question\" mbr-icon=\"\"></span>\n        </div>\n    <div class=\"mbr-col-sm-12 mbr-col-md-7 mbr-col-lg-8 align-left\">\n        <div class=\"flex-column\">\n        <h3 class=\"mbr-fonts-style mbr-black mbr-section-title title mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".title\" mbr-if=\"title\">Have Any Questions ?</h3>\n        <h4 class=\"mbr-fonts-style subtitle\" mbr-theme-style=\"display-4\" data-app-selector=\".subtitle, .mbr-section-btn\" mbr-if=\"subtitle\">We are Here To Help</h4>\n        </div>\n    </div>\n         <div class=\"mbr-section-btn mbr-jc-e mbr-flex flex-wrap mbr-col-sm-12 mbr-col-md-4 mbr-col-lg-3 mbr-pt-1\" mbr-buttons=\"\" data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\"><a class=\"btn btn-md btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\"><span class=\"mbrib-right mbr-iconfont mbr-iconfont-btn\" mbr-icon=\"\"></span><span class=\"btn__hover\">Get Help Here</span></a></div>\n    </div>\n    </div>\n\n</section>",
+          "_cid": "scf63xRGMJ",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "ampContent21-3"
         }
       ]
     }
